@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Cross-app/static/css/main.8f9dc4e2.css",
+    "main.js": "/Cross-app/static/js/main.626727dc.js",
+    "static/js/453.fe2afd15.chunk.js": "/Cross-app/static/js/453.fe2afd15.chunk.js",
+    "index.html": "/Cross-app/index.html",
+    "main.8f9dc4e2.css.map": "/Cross-app/static/css/main.8f9dc4e2.css.map",
+    "main.626727dc.js.map": "/Cross-app/static/js/main.626727dc.js.map",
+    "453.fe2afd15.chunk.js.map": "/Cross-app/static/js/453.fe2afd15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f9dc4e2.css",
+    "static/js/main.626727dc.js"
+  ]
+}
