@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CROSS App</title>
-  <style>
+
     body, html {
       margin: 0;
       padding: 0;
@@ -165,43 +159,4 @@
         height: 520px;
       }
     }
-  </style>
-</head>
-<body>
-
-  <nav class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="Logo" class="logo-icon" />
-      CROSS
-    </div>
-    <div class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#download">Download</a>
-      <a href="#Contact">Contact</a>
-      <a href="#About Us">About Us</a>
-    </div>
-    <button class="get-started">Get Started</button>
-  </nav>
-
-  <main class="hero">
-    <div class="left">
-      <h1><span class="highlight">Guiding</span> Your<br />Spiritual Journey<br />Every Day</h1>
-      <p>
-        Stay connected with the Word of God, community activities, and reflections — all in one place with the CROSS app.
-      </p>
-      <div class="buttons">
-        <button class="btn primary">Download Now</button>
-        <button class="btn secondary">Learn More</button>
-      </div>
-    </div>
-
-    <div class="phone-frame">
-      <div class="phone-notch"></div>
-      <div class="phone-screen">
-        <img src="cross.jpg" alt="App Preview" class="screen-image" />
-      </div>
-    </div>
-  </main>
-
-</body>
-</html>
+ 
