@@ -1,0 +1,140 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+.container {
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #0e0e0e;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #f1c40f;
+}
+
+.logo-img {
+  height: 32px;
+  width: 32px;
+  margin-right: 0.5rem;
+  object-fit: contain;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.get-started {
+  background: #f1c40f;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 3rem;                 /* spacing between text and image */
+  flex-wrap: wrap;
+}
+.left {
+  max-width: 500px;
+  flex: 1;
+}
+.left h1 {
+  font-size: 2.2rem;         /* reduced from 2.8rem */
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #f1c40f;
+}
+
+.left p {
+  font-size: 1rem;           /* standard body size */
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background-color: #f1c40f;
+  color: #000;
+  border: none;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.mockup {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  height: auto;
+  object-fit: contain;
+}
+.phone-frame {
+  width: 250px;
+  height: 500px;
+  background-color: #000;
+  border: 16px solid #333;
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
