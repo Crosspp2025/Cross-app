@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Church App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Church App</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b1c2c;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
     header {
-      background-color: #4a76a8;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      width: 100%;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem;
-      padding: 1rem;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    .qr-code {
-      display: flex;
-      justify-content: center;
       margin-top: 2rem;
     }
-    .qr-code img {
-      max-width: 200px;
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .download-button {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      background-color: #f1c40f;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .download-button:hover {
+      background-color: #d4ac0d;
+    }
+    .qr-section {
+      margin-top: 2rem;
+    }
+    .qr-section img {
+      width: 150px;
       height: auto;
     }
     footer {
-      text-align: center;
-      margin-top: auto;
-      padding: 1rem;
-      background: #eee;
-      width: 100%;
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Our Church App</h1>
-    <p>Your guide to spiritual growth and community connection</p>
+    <img src="logo_placeholder.png" alt="Church App Logo" style="width:80px; margin-bottom: 1rem;">
+    <h1>CROSS APP</h1>
+    <p>Guiding your spiritual journey every day. Stay connected with the Word of God, community activities, and reflections — all in one place.</p>
+    <button class="download-button">Download the App</button>
   </header>
-  <section>
-    <h2>About the App</h2>
-    <p>[App description will go here.]</p>
 
-    <h2>Features</h2>
-    <ul>
-      <li>[Feature 1]</li>
-      <li>[Feature 2]</li>
-      <li>[Feature 3]</li>
-    </ul>
+  <div class="qr-section">
+    <p>Scan the QR code to download:</p>
+    <img src="placeholder_qr.png" alt="Download QR Code">
+  </div>
 
-    <div class="qr-code">
-      <img src="placeholder_qr.png" alt="QR Code to download the app" />
-    </div>
-  </section>
   <footer>
-    &copy; 2025 Our Church App. All rights reserved.
+    &copy; 2025 CROSS App. All rights reserved.
   </footer>
 </body>
 </html>
