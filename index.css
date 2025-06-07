@@ -1,71 +1,75 @@
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body, html {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #0e0e0e;
       color: #fff;
+      overflow-x: hidden;
     }
 
+    /* NAVBAR */
     .navbar {
-     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #0e0e0e;
-  border-bottom: 1px solid #f1c40f; /* Add this line */
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1.2rem;
+      background-color: #0e0e0e;
+      border-bottom: 1px solid #f1c40f;
     }
 
     .logo {
+      position: absolute;
+      left: 1.2rem;
       display: flex;
       align-items: center;
       font-weight: bold;
-      font-size: 40px;
+      font-size: 1.5rem;
       color: #f1c40f;
+      white-space: nowrap;
     }
 
     .logo-icon {
-      height: 100px;
-      width: 100px;
-      margin-right: 0.1rem;
+      height: 36px;
+      width: 36px;
+      margin-right: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
     }
 
     .nav-links a {
-      margin: 0 1rem;
       text-decoration: none;
       color: #fff;
-      font-weight: 800;
-      font-size: 24px;
+      font-weight: 600;
+      font-size: 18px;
     }
 
-    .get-started {
-      background: #f1c40f;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 999px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
+    /* HERO SECTION */
     .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 4rem 10rem;
+      padding: 2rem 1.5rem;
       text-align: center;
-      gap: 100px;
+      gap: 2.5rem;
     }
 
     .left {
-       
       max-width: 600px;
-      margin-bottom: 3rem;
     }
 
     .left h1 {
-  
-      font-size: 4rem;
-      line-height: 1.2;
+      font-size: 2rem;
+      line-height: 1.4;
     }
 
     .highlight {
@@ -73,18 +77,26 @@
     }
 
     .left p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 1rem 0 2rem;
       color: #ccc;
     }
 
-    .buttons button {
-      margin-right: 1rem;
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .buttons a button {
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
       border-radius: 999px;
       border: none;
       cursor: pointer;
+      width: 100%;
+      max-width: 240px;
     }
 
     .btn.primary {
@@ -99,16 +111,16 @@
       color: #f1c40f;
     }
 
+    /* PHONE FRAME */
     .phone-frame {
-      width: 300px;
-      height: 600px;
+      width: 260px;
+      height: 520px;
       border-radius: 36px;
       background-color: #1b1b1b;
       padding: 16px 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       position: relative;
       overflow: hidden;
-      margin: 0 auto;
     }
 
     .phone-notch {
@@ -139,24 +151,158 @@
       object-fit: cover;
     }
 
-    @media (min-width: 900px) {
+    /* FEATURES SECTION */
+    #features {
+      padding: 4rem 1.5rem;
+      background-color: #0e0e0e;
+      text-align: center;
+    }
+
+    #features h2 {
+      font-size: 2rem;
+      color: #f1c40f;
+      margin-bottom: 1rem;
+    }
+
+    #features p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #ccc;
+    }
+
+    .screenshot-gallery {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 1rem 0;
+      scroll-snap-type: x mandatory;
+    }
+
+    .screenshot-gallery img {
+      width: 240px;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 20px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* DOWNLOAD SECTION */
+    #download {
+      padding: 4rem 1.5rem;
+      background-color: #111;
+      text-align: center;
+    }
+
+    #download h2 {
+      font-size: 2rem;
+      color: #f1c40f;
+      margin-bottom: 1rem;
+    }
+
+    #download p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #ccc;
+    }
+
+    .qr-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .qr-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 16px;
+      background-color: #fff;
+      padding: 1rem;
+    }
+
+    .qr-details p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    /* ABOUT SECTION */
+    #about {
+       min-height: 100vh;
+  padding: 4rem 1.5rem;
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      color: #f1c40f;
+      margin-bottom: 1rem;
+    }
+
+    #about p {
+        max-width: 700px;
+  margin: 1rem auto;
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+    }
+
+    /* ANIMATIONS */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (min-width: 768px) {
       .hero {
         flex-direction: row;
-        text-align: left;
         justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 4rem 8rem;
+      }
+
+      .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      .buttons a button {
+        width: auto;
+      }
+
+      .left h1 {
+        font-size: 3rem;
+      }
+
+      .phone-frame {
+        width: 300px;
+        height: 600px;
+      }
+
+      .qr-container {
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
       }
 
-      .left {
-        max-width: 50%;
-        margin-bottom: 0;
+      .qr-details {
+        margin-left: 2rem;
+        text-align: left;
       }
     }
-
-    @media (max-width: 400px) {
-      .phone-frame {
-        width: 260px;
-        height: 520px;
-      }
-    }
- 
+  

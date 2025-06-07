@@ -4,200 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CROSS App</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e0e;
-      color: #fff;
-    }
-
-    /* NAVBAR */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 1rem 1.2rem;
-      background-color: #0e0e0e;
-      border-bottom: 1px solid #f1c40f;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #f1c40f;
-    }
-
-    .logo-icon {
-      height: 36px;
-      width: 36px;
-      margin-right: 0.5rem;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    .get-started {
-      background: #f1c40f;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 999px;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 0.95rem;
-    }
-
-    /* HERO SECTION */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      gap: 2.5rem;
-    }
-
-    .left {
-      max-width: 600px;
-    }
-
-    .left h1 {
-      font-size: 2rem;
-      line-height: 1.4;
-    }
-
-    .highlight {
-      color: #f1c40f;
-    }
-
-    .left p {
-      font-size: 1rem;
-      margin: 1rem 0 2rem;
-      color: #ccc;
-    }
-
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      align-items: center;
-    }
-
-    .buttons button {
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      max-width: 240px;
-    }
-
-    .btn.primary {
-      background-color: #f1c40f;
-      color: #000;
-      font-weight: bold;
-    }
-
-    .btn.secondary {
-      background-color: transparent;
-      border: 2px solid #f1c40f;
-      color: #f1c40f;
-    }
-
-    /* PHONE FRAME */
-    .phone-frame {
-      width: 260px;
-      height: 520px;
-      border-radius: 36px;
-      background-color: #1b1b1b;
-      padding: 16px 12px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .phone-notch {
-      position: absolute;
-      top: 12px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 64px;
-      height: 10px;
-      background-color: #000;
-      border-radius: 8px;
-      z-index: 2;
-    }
-
-    .phone-screen {
-      width: 100%;
-      height: 100%;
-      border-radius: 32px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .screen-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* DESKTOP LAYOUT */
-    @media (min-width: 768px) {
-      .hero {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        padding: 4rem 8rem;
-      }
-
-      .buttons {
-        flex-direction: row;
-        justify-content: flex-start;
-      }
-
-      .buttons button {
-        width: auto;
-      }
-
-      .left h1 {
-        font-size: 3rem;
-      }
-
-      .phone-frame {
-        width: 300px;
-        height: 600px;
-      }
-
-      .nav-links {
-        margin-top: 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="index.css" />
+  
 </head>
 <body>
 
-  <nav class="navbar">
+  <!-- NAVIGATION -->
+  <nav class="navbar fade-up">
     <div class="logo">
       <img src="logo.png" alt="Logo" class="logo-icon" />
       CROSS
@@ -205,21 +18,20 @@
     <div class="nav-links">
       <a href="#features">Features</a>
       <a href="#download">Download</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About Us</a>
+      <a href="#about">About</a>
     </div>
-    <button class="get-started">Get Started</button>
   </nav>
 
-  <main class="hero">
+  <!-- HERO -->
+  <main class="hero fade-up">
     <div class="left">
       <h1><span class="highlight">Guiding</span> Your<br />Spiritual Journey<br />Every Day</h1>
       <p>
         Stay connected with the Word of God, community activities, and reflections — all in one place with the CROSS app.
       </p>
       <div class="buttons">
-        <button class="btn primary">Download Now</button>
-        <button class="btn secondary">Learn More</button>
+        <a href="#download"><button class="btn primary">Download Now</button></a>
+        <a href="#about"><button class="btn secondary">Learn More</button></a>
       </div>
     </div>
 
@@ -230,6 +42,62 @@
       </div>
     </div>
   </main>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="fade-up">
+    <h2>App Features</h2>
+    <p>
+      Explore what CROSS has to offer — just like you're browsing app previews on the Play Store.
+    </p>
+    <div class="screenshot-gallery">
+      <img src="home.jpg" class="fade-up" alt="Feature 1" />
+      <img src="discover.jpg" class="fade-up" alt="Feature 2" />
+      <img src="reminders.jpg" class="fade-up" alt="Feature 3" />
+      <img src="diary.jpg" class="fade-up" alt="Feature 4" />
+      <img src="profile.jpg" class="fade-up" alt="Feature 5" />
+    </div>
+  </section>
+
+  <!-- DOWNLOAD SECTION -->
+  <section id="download" class="fade-up">
+    <h2>Download CROSS App</h2>
+    <p>
+      Scan the QR code below to download the CROSS app on your mobile device. Available on Android and iOS.
+    </p>
+    <div class="qr-container">
+      <img src="qr.png" alt="QR Code" />
+      <div class="qr-details">
+        <p><strong>Platform:</strong> Android & iOS</p>
+        <p><strong>Version:</strong> 1.0.0</p>
+        <p><strong>Last Updated:</strong> June 2025</p>
+        <p><strong>Instructions:</strong> Use your camera or a QR scanner app to download and install.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="fade-up">
+    <h2>About CROSS</h2>
+    <p>
+      CROSS stands for <strong>Christ Reigns Over Students' Soul</strong>. Our mission is to support and guide students and individuals through their spiritual journey every day with uplifting content, scripture, and connection to community.
+    </p>
+    <p>
+      Designed with love and purpose, the CROSS app helps you reflect, discover new insights, and never lose touch with your faith.
+    </p>
+  </section>
+
+  <!-- SCROLL ANIMATION SCRIPT -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
